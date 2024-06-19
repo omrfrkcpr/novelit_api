@@ -13,9 +13,9 @@ const app = express();
 app.use(cors(corsOptions));
 
 app.use(express.json());
-app.all("/", (req, res) => {
-  res.send("Library Management APP");
-});
+// app.all("/", (req, res) => {
+//   res.send("Library Management APP");
+// });
 
 // ROUTER
 app.use(require("./src/routers/BookRouter"));
