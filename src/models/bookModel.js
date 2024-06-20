@@ -8,6 +8,10 @@ const Book = sequelize.define("book", {
     allowNull: false,
     unique: true,
   },
+  description: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+  },
   author: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -26,6 +30,11 @@ const Book = sequelize.define("book", {
   },
   image: {
     type: DataTypes.TEXT,
+  },
+  detailUrl: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+    unique: true,
   },
 });
 
