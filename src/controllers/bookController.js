@@ -25,11 +25,7 @@ module.exports = {
     //   next(error)
     // }
 
-    const data = await Contact.findAll({
-      where: {
-        isActive: true,
-      },
-    });
+    const data = await Book.findAll();
     // throw new Error("Hata fırlattım, yakala!")
     console.log(data);
     res.status(200).send({
@@ -40,7 +36,7 @@ module.exports = {
   create: async (req, res) => {
     // const { firstName, lastName, email, phone, address, isActive } = req.body;
     // const data = await sequelize.query(
-    //   "INSERT INTO contacts (firstName,lastName,email,phone,address,createdAt,updatedAt,isActive) VALUES (?,?,?,?,?,?,?,?)",
+    //   "INSERT INTO books (firstName,lastName,email,phone,address,createdAt,updatedAt,isActive) VALUES (?,?,?,?,?,?,?,?)",
     //   {
     //     replacements: [
     //       firstName,

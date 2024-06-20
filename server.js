@@ -3,16 +3,16 @@ const express = require("express");
 const cors = require("cors");
 
 require("express-async-errors");
+require("dotenv").config();
 
-const corsOptions = {
-  origin: `http://localhost:${process.env.PORT}`,
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
+const HOST = process.env.HOST;
+const SERVER_PORT = process.env.SERVER_PORT;
+const CLIENT_PORT = process.env.CLIENT_PORT;
 
 const app = express();
-app.use(cors(corsOptions));
-
+app.use(cors({ origin: `${HOST}:${CLIENT_PORT}` }));
 app.use(express.json());
+
 // app.all("/", (req, res) => {
 //   res.send("Library Management APP");
 // });
@@ -21,4 +21,6 @@ app.use(express.json());
 app.use(require("./src/routers/BookRouter"));
 app.use(require("./src/middlewares/errorHandler"));
 
-app.listen(8000, () => console.log(`server runned http://localhost:8000`));
+app.listen(SERVER_PORT, () =>
+  console.log(`server runned ${HOST}:${SERVER_PORT}`)
+);
