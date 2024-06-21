@@ -20,6 +20,13 @@ module.exports = {
         message: "Please enter a valid ISBN code",
       });
     } else if (
+      isbn.split("").filter((char) => !isNaN(char) && char !== " ") !== 13
+    ) {
+      return res.status(400).send({
+        error: true,
+        message: "ISBN must be 13 digits long and should not contain spaces",
+      });
+    } else if (
       genre.trim().length > 30 ||
       genre.trim().length < 2 ||
       genre.trim().includes(" ")
