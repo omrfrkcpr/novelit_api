@@ -34,7 +34,6 @@ const Book = sequelize.define("book", {
   detailUrl: {
     type: DataTypes.TEXT,
     allowNull: false,
-    unique: true,
   },
 });
 
