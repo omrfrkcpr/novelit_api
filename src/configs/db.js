@@ -2,7 +2,7 @@
 
 const { Sequelize } = require("sequelize");
 
-const sequelize = new Sequelize("sqlite:./bookdb.sqlite3");
+const sequelize = new Sequelize(process.env.SQLITE_DB_URL);
 
 (async () => {
   try {
