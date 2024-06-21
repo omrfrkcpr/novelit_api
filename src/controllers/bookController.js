@@ -1,8 +1,8 @@
 "use strict";
 
 const Book = require("../models/bookModel");
-
-const { sequelize } = require("../configs/db");
+// const { sequelize } = require("../configs/db");
+const { validateBook } = require("../middlewares/validateBook");
 
 module.exports = {
   list: async (req, res, next) => {
@@ -15,14 +15,17 @@ module.exports = {
       books: data,
     });
   },
-  create: async (req, res) => {
-    const data = await Book.create(req.body); //! ORM
+  create: [
+    validateBook, //! validation middleware
+    async (req, res) => {
+      const data = await Book.create(req.body); //! ORM
 
-    res.status(201).send({
-      error: false,
-      books: data,
-    });
-  },
+      res.status(201).send({
+        error: false,
+        books: data,
+      });
+    },
+  ],
   get: async (req, res) => {
     const book = await Book.findByPk(req.params.id);
     res.status(201).send({
