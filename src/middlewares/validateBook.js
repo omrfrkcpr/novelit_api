@@ -20,14 +20,14 @@ module.exports = {
         message: "Please enter a valid ISBN code",
       });
     } else if (
-      genre.trim().length > 30 ||
+      genre.trim().length > 12 ||
       genre.trim().length < 2 ||
       genre.trim().includes(" ")
     ) {
       return res.status(400).send({
         error: true,
         message:
-          "Genre must be between 2 and 30 characters, and should not contain spaces",
+          "Genre must be between 2 and 12 characters, and should not contain spaces",
       });
     } else if (publicationYear > new Date().getFullYear()) {
       return res.status(400).send({
