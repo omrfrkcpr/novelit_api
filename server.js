@@ -14,7 +14,7 @@ app.use(cors({ origin: `${HOST}:${CLIENT_PORT}` }));
 app.use(express.json());
 
 // app.all("/", (req, res) => {
-//   res.send("Library Management APP");
+//   res.send("Welcome to Novelit");
 // });
 
 // ROUTER
