@@ -2,7 +2,8 @@
 
 module.exports = {
   validateBook: (req, res, next) => {
-    const { title, author, isbn, genre, publicationYear } = req.body;
+    const { title, author, isbn, genre, publicationYear, description } =
+      req.body;
 
     if (title.trim().length > 50 || title.trim().length < 2) {
       return res.status(400).send({
@@ -13,6 +14,14 @@ module.exports = {
       return res.status(400).send({
         error: true,
         message: "Author must be between 2 and 50 characters",
+      });
+    } else if (
+      description.trim().split(" ").length > 225 ||
+      description.trim().split(" ").length < 50
+    ) {
+      return res.status(400).send({
+        error: true,
+        message: "Description must be between 50 and 225 words",
       });
     } else if (!isbn.trim().includes("-")) {
       return res.status(400).send({
