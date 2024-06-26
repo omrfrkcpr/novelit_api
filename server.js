@@ -7,10 +7,10 @@ require("dotenv").config();
 
 const HOST = process.env.HOST;
 const SERVER_PORT = process.env.SERVER_PORT || 3000;
-const CLIENT_PORT = process.env.CLIENT_PORT;
+const CLIENT_HOST = process.env.CLIENT_HOST;
 
 const app = express();
-app.use(cors({ origin: `${HOST}:${CLIENT_PORT}` }));
+app.use(cors({ origin: `${CLIENT_HOST}` }));
 app.use(express.json());
 
 app.all("/", (req, res) => {
