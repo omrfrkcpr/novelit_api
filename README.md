@@ -89,26 +89,8 @@
 ### Built With
 
 <p align="center">
-  <a href="https://nodejs.org/en">
-    <img src="https://skillicons.dev/icons?i=nodejs" />
-  </a>
-  <a href="https://expressjs.com/">
-    <img src="https://skillicons.dev/icons?i=express" />
-  </a>
-  <a href="https://www.sqlite.org/">
-    <img src="https://skillicons.dev/icons?i=sqlite" />
-  </a>
-  <a href="https://sequelize.org/">
-    <img src="https://skillicons.dev/icons?i=sequelize" />
-  </a>
-  <a href="https://www.javascript.org/">
-    <img src="https://skillicons.dev/icons?i=js" />
-  </a>
-  <a href="https://www.npmjs.com/">
-    <img src="https://skillicons.dev/icons?i=npm" />
-  </a>
-  <a href="https://www.postman.com/">
-    <img src="https://skillicons.dev/icons?i=postman" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,sqlite,sequelize,js,npm,postman" />
   </a>
 </p>
 
