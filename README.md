@@ -42,7 +42,7 @@
 <h3 align="center">Novelit_API</h3>
 
   <p align="center">
-    Novelit is a robust full-stack application designed to help users manage detailed information about books. This repository contains the backend server built with Node.js, Express.js, SQLite, and Sequelize, following the MVC (Model-View-Controller) architecture. The backend handles CRUD operations to manage book data efficiently and effectively.
+    The Novelit API is a powerful and efficient RESTful service designed to manage book information within a database. Built with Node.js, Express.js, SQLite, and Sequelize, the API supports full CRUD operations, enabling users to create, read, update, and delete book records. The API follows the MVC (Model-View-Controller) architecture to ensure a clean separation of concerns, making the codebase more manageable and scalable.
     <br />
     <a href="https://github.com/omrfrkcpr/novelit_api"><strong>Explore the docs »</strong></a>
     <br />
@@ -278,7 +278,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See [LICENSE.txt](https://github.com/omrfrkcpr/novelit/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE.txt](https://github.com/omrfrkcpr/novelit_api/blob/main/LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -286,9 +286,9 @@ Distributed under the MIT License. See [LICENSE.txt](https://github.com/omrfrkcp
 
 ## Contact
 
-[Send a Email](omerrfarukcapur@gmail.com)<br />
-[Repo Link](https://github.com/omrfrkcpr/novelit)<br />
-[Demo Link](novelit.vercel.app)
+[Support](omerrfarukcapur@gmail.com)<br />
+[Repo Link](https://github.com/omrfrkcpr/novelit_api)<br />
+[API](https://novelit-server.onrender.com/books)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -296,8 +296,8 @@ Distributed under the MIT License. See [LICENSE.txt](https://github.com/omrfrkcp
 
 ## Acknowledgments
 
-- [novelit-api](https://novelit-server.onrender.com/books)
-- [novelit-api-repo](https://github.com/omrfrkcpr/novelit_server)
+- [novelit-app](https://novelit.vercel.app/)
+- [novelit-app-repo](https://github.com/omrfrkcpr/novelit)
 - [postman-doc](https://documenter.getpostman.com/view/14573422/2sA3drKFJ7)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
