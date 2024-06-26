@@ -13,10 +13,6 @@ const app = express();
 app.use(cors({ origin: `${HOST}:${CLIENT_PORT}` }));
 app.use(express.json());
 
-// app.all("/", (req, res) => {
-//   res.send("Welcome to Novelit");
-// });
-
 // ROUTER
 app.use(require("./src/routers/BookRouter"));
 app.use(require("./src/middlewares/errorHandler"));
