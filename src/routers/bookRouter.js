@@ -1,6 +1,6 @@
 "use strict";
 const router = require("express").Router();
-const books = require("../controllers/BookController");
+const books = require("../controllers/bookController");
 const validateIdHandler = require("../middlewares/validateIdHandler");
 
 router.route("/books").get(books.list).post(books.create);
