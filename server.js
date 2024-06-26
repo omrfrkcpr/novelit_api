@@ -6,7 +6,7 @@ require("express-async-errors");
 require("dotenv").config();
 
 const HOST = process.env.HOST;
-const SERVER_PORT = process.env.SERVER_PORT;
+const SERVER_PORT = process.env.SERVER_PORT || 3000;
 const CLIENT_PORT = process.env.CLIENT_PORT;
 
 const app = express();
