@@ -14,7 +14,7 @@ app.use(cors({ origin: `${HOST}:${CLIENT_PORT}` }));
 app.use(express.json());
 
 // ROUTER
-app.use(require("./src/routers/BookRouter"));
+app.use(require("./src/routers/bookRouter"));
 app.use(require("./src/middlewares/errorHandler"));
 
 app.listen(SERVER_PORT, () =>
